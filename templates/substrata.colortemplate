@@ -106,7 +106,7 @@ Type           blue         none
 
 Delimiter      base6        none
 Directory      blue         none
-Function       blue         none  italic
+Function       light_blue   none  italic
 Operator       base6        none
 SpecialComment base8        none  italic
 String         cyan         none
