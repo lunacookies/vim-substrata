@@ -1,0 +1,246 @@
+# vim: set ft=colortemplate nomodeline:
+Full name:   Substrata
+Short name:  substrata
+Author:      Aramis Razzaghipour <aramisnoah@gmail.com>
+Description: A cold and dark colourscheme inspired by Nord and Iceberg
+
+Background: dark
+Neovim:     yes
+
+#
+# Palette
+#
+
+Color: base0        #191c25 ~ # Background
+Color: base1        #20222d ~ # Slightly lighter
+Color: base2        #272935 ~ # Much lighter
+Color: base3        #2e313d ~ # Lightest
+
+Color: base4        #3c3f4e ~ # Almost invisible
+Color: base5        #5b5f71 ~ # Much darker
+Color: base6        #6c6f82 ~ # Slightly darker
+Color: base7        #b5b4c9 ~ # Foreground
+Color: base8        #f0ecfe ~ # Lighter
+
+Color: red          #cf8164 ~
+Color: green        #76a065 ~
+Color: yellow       #ab924c ~
+Color: blue         #8296b0 ~
+Color: pink         #a18daf ~
+Color: cyan         #659ea2 ~
+
+Color: light_red    #fe9f7c ~
+Color: light_green  #92c47e ~
+Color: light_yellow #d2b45f ~
+Color: light_blue   #a0b9d8 ~
+Color: light_pink   #c6aed7 ~
+Color: light_cyan   #7dc2c7 ~
+
+Color: red_wash     #2d1d16 ~
+Color: green_wash   #1c2316 ~
+Color: yellow_wash  #262011 ~
+
+Term colors: base1      red        green       yellow
+Term colors: blue       pink       cyan        base7
+Term colors: base5      light_red  light_green light_yellow
+Term colors: light_blue light_pink light_cyan  base8
+
+#
+# Highlighting
+#
+
+Normal         base7        base0
+Cursor         base0        base8
+None           none         none
+
+# Vim Interface
+
+CursorLineNr   base6        base1
+FoldColumn     base4        none
+Folded         base6        base2
+LineNr         base4        none
+MatchParen     base8        base3 bold
+SignColumn     base4        none
+
+Ignore         base4        none
+
+Pmenu          base6        base2
+PmenuSbar      base2        base2
+PmenuSel       base8        base3
+PmenuThumb     base1        base1
+
+ErrorMsg       light_red    none
+ModeMsg        base5        none
+MoreMsg        light_blue   none
+Question       light_blue   none
+WarningMsg     light_yellow none
+
+ColorColumn    none         base1
+CursorColumn   none         base1
+CursorLine     none         base1
+
+QuickFixLine   none         base3
+StatusLine     base6        base3
+StatusLineNC   base5        base2
+VertSplit      base4        none
+WildMenu       base0        base7
+
+IncSearch      base0        base7
+Search         base0        blue
+Visual         none         base3
+
+DiffAdd        light_green  green_wash
+DiffChange     none         base2
+DiffDelete     light_red    red_wash
+DiffText       light_yellow yellow_wash
+
+# Syntax
+
+Comment        base5        none  italic
+Constant       pink         none
+Error          red          none
+PreProc        light_blue   none
+Special        light_cyan   none
+Statement      blue         none
+Type           blue         none
+
+Delimiter      base6        none
+Directory      blue         none
+Function       blue         none  italic
+Operator       base6        none
+SpecialComment base8        none  italic
+String         cyan         none
+Title          base8        none
+Todo           base8        none
+Underlined     light_blue   none  underline
+vimOption      light_blue   none
+
+SpellBad       red          none  undercurl guisp=red
+SpellCap       red          none  undercurl guisp=red
+SpellLocal     red          none  undercurl guisp=red
+SpellRare      red          none  undercurl guisp=red
+
+# indentLine plugin
+#let g:indentLine_color_gui  = '@guibase4'
+#let g:indentLine_color_term = @term256base4
+
+#
+# Links
+#
+
+# Vim Interface
+
+Terminal         -> Normal
+
+TabLine          -> StatusLineNC
+TabLineFill      -> StatusLineNC
+TabLineSel       -> StatusLine
+
+StatusLineTerm   -> StatusLine
+StatusLineTermNC -> StatusLineNC
+
+VisualNOS        -> Visual
+
+# Diff
+
+diffAdded          -> DiffAdd
+diffBDiffer        -> WarningMsg
+diffChanged        -> DiffChange
+diffCommon         -> WarningMsg
+diffDiffer         -> WarningMsg
+diffFile           -> Directory
+diffIdentical      -> WarningMsg
+diffIndexLine      -> Number
+diffIsA            -> WarningMsg
+diffNoEOL          -> WarningMsg
+diffOnly           -> WarningMsg
+diffRemoved        -> DiffDelete
+
+# Syntax
+
+Boolean            -> Constant
+Character          -> Constant
+Float              -> Constant
+Number             -> Constant
+
+Conditional        -> Statement
+Exception          -> Statement
+Keyword            -> Statement
+Label              -> Statement
+Repeat             -> Statement
+
+Define             -> PreProc
+Include            -> PreProc
+Macro              -> PreProc
+PreCondit          -> PreProc
+
+StorageClass       -> Type
+Structure          -> Type
+Typedef            -> Type
+
+Debug              -> Special
+SpecialChar        -> Special
+Tag                -> Special
+
+Noise              -> Delimiter
+StringDelimiter    -> Delimiter
+
+Conceal            -> Ignore
+NonText            -> Ignore
+SpecialKey         -> Ignore
+EndOfBuffer        -> Ignore
+Whitespace         -> Ignore
+
+Identifier         -> None
+
+Searchlight        -> IncSearch
+cssBraces          -> Delimiter
+gitcommitOverflow  -> Error
+gitcommitSummary   -> Title
+helpHyperTextJump  -> Underlined
+htmlArg            -> Function
+htmlEndTag         -> Delimiter
+htmlLink           -> Underlined
+htmlSpecialTagName -> htmlTagName
+htmlTag            -> Delimiter
+htmlTagName        -> Statement
+rustModPath        -> None
+rustSigil          -> Type
+scssAttribute      -> Delimiter
+vimAutoCmdSfxList  -> Type
+vimAutoEventList   -> Identifier
+vimCmdSep          -> Special
+vimCommentTitle    -> SpecialComment
+vimContinue        -> Delimiter
+vimHighlight       -> Statement
+vimUserFunc        -> Function
+
+#
+# Markdown
+#
+
+# We imitate iA Writer's extremely minimal markdown highlighting to minimise
+# distraction when writing.
+
+markdownBold   none  none bold
+markdownItalic none  none italic
+markdownUrl    base5 none underline
+markdownCode   none  base2
+markdownFaded  base5 none
+
+markdownBlockquote        -> None
+markdownCodeBlock         -> markdownCode
+markdownCodeDelimiter     -> markdownCode
+markdownH1Delimiter       -> markdownH1
+markdownH2Delimiter       -> markdownH2
+markdownH3Delimiter       -> markdownH3
+markdownH4Delimiter       -> markdownH4
+markdownH5Delimiter       -> markdownH5
+markdownH6Delimiter       -> markdownH6
+markdownId                -> markdownFaded
+markdownIdDeclaration     -> markdownFaded
+markdownLinkDelimiter     -> markdownFaded
+markdownLinkText          -> None
+markdownLinkTextDelimiter -> markdownFaded
+markdownListMarker        -> markdownFaded
+markdownRule              -> None
