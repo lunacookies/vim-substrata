@@ -17,7 +17,7 @@ If you’re using a GUI, then Substrata should work out of the box. However, if 
 
 | Colour     | Normal    | Bright    |
 | ---        | ---       | ---       |
-| Black      | `#20222d` | `#5b5f71` |
+| Black      | `#2e313d` | `#5b5f71` |
 | Red        | `#cf8164` | `#fe9f7c` |
 | Green      | `#76a065` | `#92c47e` |
 | Yellow     | `#ab924c` | `#d2b45f` |
