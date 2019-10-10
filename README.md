@@ -39,6 +39,19 @@ A preset is included for iTerm.
 ![Visual selections in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-visual.png)*Visual mode*
 ![Fugitive in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-git.png)*[Fugitive][fug]*
 
+## Inspiration
+
+Substrata was inspired by these colourschemes (they’re great, you should check them out!):
+
+- [Apprentice][appr]
+- [Blame][blame]
+- [Iceberg][ice]
+- [Nord][nord]
+
+[appr]: https://github.com/romainl/Apprentice
+[blame]: https://github.com/hauleth/blame.vim
 [fug]: https://github.com/tpope/vim-fugitive
 [goyo]: https://github.com/junegunn/goyo.vim
+[ice]: https://github.com/cocopon/iceberg.vim
 [lime]: https://github.com/junegunn/limelight.vim
+[nord]: https://www.nordtheme.com/ports/vim
