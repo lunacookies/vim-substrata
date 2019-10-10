@@ -8,6 +8,27 @@ Background: dark
 Neovim:     yes
 
 #
+# Config vars
+#
+
+#if !exists('g:@shortname_italic_comments')
+    #let g:@shortname_italic_comments = 1
+#endif
+
+documentation
+===========================================================================
+@fullname options                                *@shortname-options*
+
+                                                 *g:@shortname_italic_comments*
+
+Set to 0 if you want to disable italic comments, and to any other value to
+enable these italics. The default value is 1.
+>
+    let g:substrata_italic_comments = 0
+<
+enddocumentation
+
+#
 # Palette
 #
 
@@ -223,7 +244,7 @@ vimUserFunc        -> Function
 # Markdown
 #
 
-# We imitate iA Writer's extremely minimal markdown highlighting to minimise
+# We imitate iA Writer’s extremely minimal markdown highlighting to minimise
 # distraction when writing.
 
 markdownBold   none  none bold
@@ -248,3 +269,20 @@ markdownLinkText          -> None
 markdownLinkTextDelimiter -> markdownFaded
 markdownListMarker        -> markdownFaded
 markdownRule              -> None
+
+#
+# Activate config
+#
+
+# We override styling based on config vars here, rather than in the midst of
+# other highlight groups, so that the config vars’ effects can be edited
+# directly next to each other. An additional benefit of this strategy is that
+# the alignment of highlight group name, foreground, background, et cetera stays
+# unbroken.
+
+verbatim
+    if !g:@shortname_italic_comments
+        hi Comment        cterm=NONE gui=NONE
+        hi SpecialComment cterm=NONE gui=NONE
+    endif
+endverbatim
