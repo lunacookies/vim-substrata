@@ -124,6 +124,10 @@ SpellRare      red          none  undercurl guisp=red
 #let g:indentLine_color_gui  = '@guibase4'
 #let g:indentLine_color_term = @term256base4
 
+# Limelight
+#let g:limelight_conceal_guifg = '@guibase5'
+#let g:limelight_conceal_ctermfg = @term256base5
+
 #
 # Links
 #
