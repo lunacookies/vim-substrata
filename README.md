@@ -29,3 +29,16 @@ If you’re using a GUI, then Substrata should work out of the box. However, if 
 | Background | `#191c25` |           |
 
 A preset is included for iTerm.
+
+## Screenshots
+
+![The popup menu in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-popup.png)*Popup menu*
+![Searching in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-search.png)*Searching*
+![Showing the diff between two files in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-diff.png)*Diffing*
+![Writing in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-goyo.png)*Writing using [Goyo][goyo] and [Limelight][lime]*
+![Visual selections in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-visual.png)*Visual mode*
+![Fugitive in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-git.png)*[Fugitive][fug]*
+
+[fug]: https://github.com/tpope/vim-fugitive
+[goyo]: https://github.com/junegunn/goyo.vim
+[lime]: https://github.com/junegunn/limelight.vim
