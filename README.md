@@ -32,6 +32,8 @@ A preset is included for iTerm.
 
 ## Screenshots
 
+The typeface used in the screenshots is [iA Writer Mono][iafont], which is derived from [IBM Plex Mono][ibmfont].
+
 ![The popup menu in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-popup.png)*Popup menu*
 ![Searching in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-search.png)*Searching*
 ![Showing the diff between two files in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-diff.png)*Diffing*
@@ -52,6 +54,8 @@ Substrata was inspired by these colourschemes (they’re great, you should check
 [blame]: https://github.com/hauleth/blame.vim
 [fug]: https://github.com/tpope/vim-fugitive
 [goyo]: https://github.com/junegunn/goyo.vim
+[iafont]: https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono
+[ibmfont]: https://github.com/IBM/plex
 [ice]: https://github.com/cocopon/iceberg.vim
 [lime]: https://github.com/junegunn/limelight.vim
 [nord]: https://www.nordtheme.com/ports/vim
