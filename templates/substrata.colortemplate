@@ -40,7 +40,7 @@ Color: red_wash     #2d1d16 ~
 Color: green_wash   #1c2316 ~
 Color: yellow_wash  #262011 ~
 
-Term colors: base1      red        green       yellow
+Term colors: base3      red        green       yellow
 Term colors: blue       pink       cyan        base7
 Term colors: base5      light_red  light_green light_yellow
 Term colors: light_blue light_pink light_cyan  base8
