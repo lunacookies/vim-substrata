@@ -1,10 +1,19 @@
 ===========================================================================
-Substrata options                                *substrata-options*
+Substrata options                                         *substrata-options*
 
-                                                 *g:substrata_italic_comments*
+---------------------------------------------------------------------------
+                                                *g:substrata_italic_comments*
 
 Set to 0 if you want to disable italic comments, and to any other value to
 enable these italics. The default value is 1.
 >
     let g:substrata_italic_comments = 0
+<
+---------------------------------------------------------------------------
+                                               *g:substrata_italic_functions*
+
+Set to 0 if you want to disable italic functions, and to any other value to
+enable these italics. The default value is 1.
+>
+    let g:substrata_italic_functions = 0
 <

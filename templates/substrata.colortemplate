@@ -15,16 +15,29 @@ Neovim:     yes
     #let g:@shortname_italic_comments = 1
 #endif
 
+#if !exists('g:@shortname_italic_functions')
+    #let g:@shortname_italic_functions = 1
+#endif
+
 documentation
 ===========================================================================
-@fullname options                                *@shortname-options*
+@fullname options                                         *@shortname-options*
 
-                                                 *g:@shortname_italic_comments*
+---------------------------------------------------------------------------
+                                                *g:@shortname_italic_comments*
 
 Set to 0 if you want to disable italic comments, and to any other value to
 enable these italics. The default value is 1.
 >
     let g:substrata_italic_comments = 0
+<
+---------------------------------------------------------------------------
+                                               *g:@shortname_italic_functions*
+
+Set to 0 if you want to disable italic functions, and to any other value to
+enable these italics. The default value is 1.
+>
+    let g:substrata_italic_functions = 0
 <
 enddocumentation
 
@@ -284,5 +297,8 @@ verbatim
     if !g:@shortname_italic_comments
         hi Comment        cterm=NONE gui=NONE
         hi SpecialComment cterm=NONE gui=NONE
+    endif
+    if !g:@shortname_italic_functions
+        hi Function       cterm=NONE gui=NONE
     endif
 endverbatim
