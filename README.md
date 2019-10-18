@@ -32,7 +32,7 @@ A preset is included for iTerm.
 
 ## Screenshots
 
-The typeface used in the screenshots is [iA Writer Mono][iafont], which is derived from [IBM Plex Mono][ibmfont].
+Note that the screenshots below are likely to be slightly out of date. The typeface used in the screenshots is [iA Writer Mono][iafont], which is derived from [IBM Plex Mono][ibmfont].
 
 ![The popup menu in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-popup.png)*Popup menu*
 ![Searching in Substrata](https://raw.githubusercontent.com/arzg/resources/master/substrata-search.png)*Searching*
