@@ -146,6 +146,7 @@ SpecialComment base8        none  italic
 String         cyan         none
 Title          base8        none
 Todo           base8        none
+Typedef        light_pink   none
 Underlined     light_blue   none  underline
 vimOption      light_blue   none
 
@@ -245,6 +246,7 @@ htmlTagName        -> Statement
 rustAttribute      -> Delimiter
 rustDerive         -> rustAttribute
 rustDeriveTrait    -> rustDerive
+rustIdentifier     -> Typedef
 rustModPath        -> None
 rustSigil          -> Type
 scssAttribute      -> Delimiter
