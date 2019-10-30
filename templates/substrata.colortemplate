@@ -248,7 +248,7 @@ rustDerive         -> rustAttribute
 rustDeriveTrait    -> rustDerive
 rustIdentifier     -> Typedef
 rustModPath        -> None
-rustSigil          -> Type
+rustSigil          -> Delimiter
 scssAttribute      -> Delimiter
 vimAutoCmdSfxList  -> Type
 vimAutoEventList   -> Identifier
