@@ -136,7 +136,7 @@ Error          red          none
 PreProc        light_blue   none
 Special        light_cyan   none
 Statement      blue         none
-Type           blue         none
+Type           pink         none
 
 Delimiter      base6        none
 Directory      blue         none
@@ -201,6 +201,7 @@ Character          -> Constant
 Float              -> Constant
 Number             -> Constant
 
+StorageClass       -> Statement
 Conditional        -> Statement
 Exception          -> Statement
 Keyword            -> Statement
@@ -212,7 +213,6 @@ Include            -> PreProc
 Macro              -> PreProc
 PreCondit          -> PreProc
 
-StorageClass       -> Type
 Structure          -> Type
 Typedef            -> Type
 
