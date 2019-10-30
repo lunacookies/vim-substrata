@@ -133,7 +133,7 @@ DiffText       light_yellow yellow_wash
 Comment        base5        none  italic
 Constant       pink         none
 Error          red          none
-PreProc        light_blue   none
+PreProc        blue         none
 Special        light_cyan   none
 Statement      blue         none
 Type           pink         none
