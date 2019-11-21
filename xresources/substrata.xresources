@@ -1,4 +1,4 @@
-! Substrata theme
+! Substrata Theme <https://github.com/arzg/vim-substrata>
 
 *.foreground: #b5b4c9
 *.background: #191c25
