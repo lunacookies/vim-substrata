@@ -32,7 +32,7 @@ A preset is included for iTerm.
 
 ## Xresources substrata theme
 
-If you want to use this theme, you can simply copy the content of `xresources/substrata.xresources` in your `~/.Xresources`. Otherwise, you can include it in your `~/.Xresources` by adding the following line to your configuration :
+If you want to use this theme, you can simply copy the contents of `xresources/substrata.xresources` into your `~/.Xresources`. If you would like to keep the theme in a separate file, however, you could instead include it in your `~/.Xresources` by adding the following line:
 
     #include "/path/to/substrata.xresources"
 
