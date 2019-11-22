@@ -30,6 +30,12 @@ If you’re using a GUI, then Substrata should work out of the box. However, if 
 
 A preset is included for iTerm.
 
+## Xresources substrata theme
+
+If you want to use this theme, you can simply copy the content of `xresources/substrata.xresources` in your `~/.Xresources`. Otherwise, you can include it in your `~/.Xresources` by adding the following line to your configuration :
+
+`#include "/path/to/substrata.xresources"`
+
 ## Screenshots
 
 Note that the screenshots below are likely to be slightly out of date. The typeface used in the screenshots is [iA Writer Mono][iafont], which is derived from [IBM Plex Mono][ibmfont].
