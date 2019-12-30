@@ -13,7 +13,18 @@ Use *your* favorite runtimepath/plugin manager, or place `substrata.vim` into
 
 ## Usage
 
-If you’re using a GUI, then Substrata should work out of the box. However, if you’re planning to use Substrata in a terminal, the terminal must support 24-bit colour, also known as True Colour. If you want other terminal output to match with Substrata, then set its colours to match the ones below:
+### Vim
+
+Substrata should work out of the box if you’re using a GUI Vim such as GVim or MacVim. Terminal usage, however, requires the terminal supporting 24-bit colour, also known as True Colour.
+
+```
+set termguicolors " Only needed in terminals
+colorscheme substrata
+```
+
+### Terminal
+
+If you want other terminal output to match with Substrata, then set your terminal emulator’s colours to match the ones below:
 
 | Colour     | Normal    | Bright    |
 | ---        | ---       | ---       |
@@ -28,13 +39,11 @@ If you’re using a GUI, then Substrata should work out of the box. However, if 
 | Foreground | `#b5b4c9` |           |
 | Background | `#191c25` |           |
 
-A preset is included for iTerm.
+A preset is included for iTerm and in Xresources format. The Xresources format can be used either by copying the contents of `xresources/substrata.xresources` into `~/.Xresources`, or, if you would prefer to keep the theme in a separate file, you can instead include it with the following syntax:
 
-## Xresources substrata theme
-
-If you want to use this theme, you can simply copy the contents of `xresources/substrata.xresources` into your `~/.Xresources`. If you would like to keep the theme in a separate file, however, you could instead include it in your `~/.Xresources` by adding the following line:
-
-    #include "/path/to/substrata.xresources"
+```
+#include "/path/to/substrata.xresources"
+```
 
 ## Screenshots
 
