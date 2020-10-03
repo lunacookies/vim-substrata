@@ -101,7 +101,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi vimOption guifg=#a0b9d8 guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi SpellBad guifg=#cf8164 guibg=NONE guisp=#cf8164 gui=undercurl cterm=undercurl
   hi SpellCap guifg=#a0b9d8 guibg=NONE guisp=#a0b9d8 gui=undercurl cterm=undercurl
-  hi SpellLocal guifg=#92c47e guibg=NONE guisp=#92c47e gui=undercurl cterm=undercurl
+  hi SpellLocal guifg=#a18daf guibg=NONE guisp=#a18daf gui=undercurl cterm=undercurl
   hi SpellRare guifg=#8296b0 guibg=NONE guisp=#8296b0 gui=undercurl cterm=undercurl
   hi SignifySignAdd guifg=#92c47e guibg=NONE guisp=NONE gui=NONE cterm=NONE
   hi SignifySignDelete guifg=#fe9f7c guibg=NONE guisp=NONE gui=NONE cterm=NONE
@@ -285,7 +285,7 @@ if s:t_Co >= 256
   hi vimOption ctermfg=110 ctermbg=NONE cterm=NONE
   hi SpellBad ctermfg=173 ctermbg=NONE cterm=undercurl
   hi SpellCap ctermfg=110 ctermbg=NONE cterm=undercurl
-  hi SpellLocal ctermfg=112 ctermbg=NONE cterm=undercurl
+  hi SpellLocal ctermfg=139 ctermbg=NONE cterm=undercurl
   hi SpellRare ctermfg=109 ctermbg=NONE cterm=undercurl
   hi SignifySignAdd ctermfg=114 ctermbg=NONE cterm=NONE
   hi SignifySignDelete ctermfg=216 ctermbg=NONE cterm=NONE
