@@ -286,7 +286,7 @@ if s:t_Co >= 256
   hi SpellBad ctermfg=173 ctermbg=NONE cterm=undercurl
   hi SpellCap ctermfg=110 ctermbg=NONE cterm=undercurl
   hi SpellLocal ctermfg=112 ctermbg=NONE cterm=undercurl
-  hi SpellRare ctermfg=110 ctermbg=NONE cterm=undercurl
+  hi SpellRare ctermfg=109 ctermbg=NONE cterm=undercurl
   hi SignifySignAdd ctermfg=114 ctermbg=NONE cterm=NONE
   hi SignifySignDelete ctermfg=216 ctermbg=NONE cterm=NONE
   hi SignifySignChange ctermfg=111 ctermbg=NONE cterm=NONE
