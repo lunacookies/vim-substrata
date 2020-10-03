@@ -1,4 +1,4 @@
-# vim: set ft=colortemplate nomodeline:
+; vim: set ft=colortemplate nomodeline:
 Full name:   Substrata
 Short name:  substrata
 Author:      Aramis Razzaghipour <aramisnoah@gmail.com>
@@ -7,9 +7,9 @@ Description: A cold and dark colourscheme inspired by Nord and Iceberg
 Background: dark
 Neovim:     yes
 
-#
-# Config vars
-#
+;
+; Config vars
+;
 
 #if !exists('g:@shortname_italic_comments')
     #let g:@shortname_italic_comments = 1
@@ -41,20 +41,20 @@ enable these italics. The default value is 1.
 <
 enddocumentation
 
-#
-# Palette
-#
+;
+; Palette
+;
 
-Color: base0        #191c25 ~ # Background
-Color: base1        #20222d ~ # Slightly lighter
-Color: base2        #272935 ~ # Much lighter
-Color: base3        #2e313d ~ # Lightest
+Color: base0        #191c25 ~ ; Background
+Color: base1        #20222d ~ ; Slightly lighter
+Color: base2        #272935 ~ ; Much lighter
+Color: base3        #2e313d ~ ; Lightest
 
-Color: base4        #3c3f4e ~ # Almost invisible
-Color: base5        #5b5f71 ~ # Much darker
-Color: base6        #6c6f82 ~ # Slightly darker
-Color: base7        #b5b4c9 ~ # Foreground
-Color: base8        #f0ecfe ~ # Lighter
+Color: base4        #3c3f4e ~ ; Almost invisible
+Color: base5        #5b5f71 ~ ; Much darker
+Color: base6        #6c6f82 ~ ; Slightly darker
+Color: base7        #b5b4c9 ~ ; Foreground
+Color: base8        #f0ecfe ~ ; Lighter
 
 Color: red          #cf8164 ~
 Color: green        #76a065 ~
@@ -79,15 +79,15 @@ Term colors: blue       pink       cyan        base7
 Term colors: base5      light_red  light_green light_yellow
 Term colors: light_blue light_pink light_cyan  base8
 
-#
-# Highlighting
-#
+;
+; Highlighting
+;
 
 Normal         base7        base0
 Cursor         base0        base8
 None           none         none
 
-# Vim Interface
+; Vim Interface
 
 CursorLineNr   base6        base1
 FoldColumn     base4        none
@@ -128,7 +128,7 @@ DiffChange     none         base2
 DiffDelete     light_red    red_wash
 DiffText       light_yellow yellow_wash
 
-# Syntax
+; Syntax
 
 Comment        base5        none  italic
 Constant       pink         none
@@ -155,19 +155,19 @@ SpellCap       red          none  undercurl guisp=red
 SpellLocal     red          none  undercurl guisp=red
 SpellRare      red          none  undercurl guisp=red
 
-# indentLine plugin
+; indentLine plugin
 #let g:indentLine_color_gui  = '@guibase4'
 #let g:indentLine_color_term = @term256base4
 
-# Limelight
+; Limelight
 #let g:limelight_conceal_guifg = '@guibase5'
 #let g:limelight_conceal_ctermfg = @term256base5
 
-#
-# Links
-#
+;
+; Links
+;
 
-# Vim Interface
+; Vim Interface
 
 Terminal         -> Normal
 
@@ -180,7 +180,7 @@ StatusLineTermNC -> StatusLineNC
 
 VisualNOS        -> Visual
 
-# Diff
+; Diff
 
 diffAdded          -> DiffAdd
 diffBDiffer        -> WarningMsg
@@ -195,7 +195,7 @@ diffNoEOL          -> WarningMsg
 diffOnly           -> WarningMsg
 diffRemoved        -> DiffDelete
 
-# Syntax
+; Syntax
 
 Boolean            -> Constant
 Character          -> Constant
@@ -258,12 +258,12 @@ vimContinue        -> Delimiter
 vimHighlight       -> Statement
 vimUserFunc        -> Function
 
-#
-# Markdown
-#
+;
+; Markdown
+;
 
-# We imitate iA Writer’s extremely minimal markdown highlighting to minimise
-# distraction when writing.
+; We imitate iA Writer’s extremely minimal markdown highlighting to minimise
+; distraction when writing.
 
 markdownBold   none  none bold
 markdownItalic none  none italic
@@ -288,15 +288,15 @@ markdownLinkTextDelimiter -> markdownFaded
 markdownListMarker        -> markdownFaded
 markdownRule              -> None
 
-#
-# Activate config
-#
+;
+; Activate config
+;
 
-# We override styling based on config vars here, rather than in the midst of
-# other highlight groups, so that the config vars’ effects can be edited
-# directly next to each other. An additional benefit of this strategy is that
-# the alignment of highlight group name, foreground, background, et cetera stays
-# unbroken.
+; We override styling based on config vars here, rather than in the midst of
+; other highlight groups, so that the config vars’ effects can be edited
+; directly next to each other. An additional benefit of this strategy is that
+; the alignment of highlight group name, foreground, background, et cetera stays
+; unbroken.
 
 verbatim
     if !g:@shortname_italic_comments
