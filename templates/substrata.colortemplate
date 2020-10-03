@@ -151,9 +151,9 @@ Underlined     light_blue   none  underline
 vimOption      light_blue   none
 
 SpellBad       red          none  undercurl guisp=red
-SpellCap       red          none  undercurl guisp=red
-SpellLocal     red          none  undercurl guisp=red
-SpellRare      red          none  undercurl guisp=red
+SpellCap       light_blue   none  undercurl guisp=light_blue
+SpellLocal     pink         none  undercurl guisp=pink
+SpellRare      blue         none  undercurl guisp=blue
 
 ; indentLine plugin
 #let g:indentLine_color_gui  = '@guibase4'
@@ -162,6 +162,11 @@ SpellRare      red          none  undercurl guisp=red
 ; Limelight
 #let g:limelight_conceal_guifg = '@guibase5'
 #let g:limelight_conceal_ctermfg = @term256base5
+
+; Signify
+SignifySignAdd light_green  none
+SignifySignDelete light_red  none
+SignifySignChange light_blue  none
 
 ;
 ; Links
