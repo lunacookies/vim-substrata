@@ -114,7 +114,7 @@ CursorColumn   none         base1
 CursorLine     none         base1
 
 QuickFixLine   none         base3
-StatusLine     base6        base3
+StatusLine     base0        base6
 StatusLineNC   base5        base2
 VertSplit      base4        none
 WildMenu       base0        base7
